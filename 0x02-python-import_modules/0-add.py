@@ -1,6 +1,12 @@
-#!/usr/bin/bash
-a = 1
-b = 2
-import add_0
-result = add_0.add(a, b)
-print("{} + {} = {}".format(a, b, result))
+#!/usr/bin/python3
+def add(a, b):
+    """My addition function
+
+    Args:
+        a: first integer
+        b: second integer
+
+    Returns:
+        The return value. a + b
+    """
+    return (a + b)
