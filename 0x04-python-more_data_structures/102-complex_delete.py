@@ -3,10 +3,4 @@ def complex_delete(a_dictionary, value):
     if not isinstance(a_dictionary, dict):
         return
 
-    keys_to_delete = []
-    for key, val in a_dictionary.items():
-        if val == value:
-            keys_to_delete.append(key)
-
-    for key in keys_to_delete:
-        del a_dictionary[key]
+    return {key: val for key, val in a_dictionary.items() if val != value}
