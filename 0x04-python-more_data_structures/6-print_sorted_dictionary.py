@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    for key in sorted(a_dictionary.keys()):
-        value = a_dictionary[key]
+    sorted_items = sorted(a_dictionary.items(), key=lambda x: x[0])
+    for key, value in sorted_items:
         print(key, value)
